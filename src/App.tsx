@@ -12,6 +12,7 @@ const router = createBrowserRouter([
 
 const App = () => {
   const [locale, setLocale] = useState(navigator.language);
+  setLocale('fr'); // TO BUILD
   return (
     <IntlProvider locale={locale}>
       <RouterProvider router={router} />
