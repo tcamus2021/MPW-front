@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/vite-env.d.ts","./src/components/footer.tsx","./src/components/header.tsx","./src/components/layout.tsx","./src/components/moncompteinfobulle.tsx","./src/components/accueil/accueil.tsx","./src/components/accueil/slide.tsx","./src/types/footercategorie.ts","./src/types/footerlink.ts"],"errors":true,"version":"5.6.2"}
