@@ -1,4 +1,4 @@
-const Slide = ({ slide }) => (
+const Slide = ({ slide }: any) => (
         <div className="accueil-swiper__slide">
             <img src={slide.imageUrl} alt="Description de l'image" className="accueil-swiper__slide-image" />
             <div className="accueil-swiper__slide-overlay">
