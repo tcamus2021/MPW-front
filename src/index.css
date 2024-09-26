@@ -10,23 +10,73 @@ body {
     width: 100%;
 }
 
-.main-page {
-    min-height: 100vh;
-    display: flex;
+.choix__langue {
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
     flex-direction: column;
-}
-
-.main-page__header {
-    background-color: white;
-    padding: 1rem;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-bottom: 2rem;
+    justify-content: center;
+    border: none;
+    width: 5rem;
+    padding: 0;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
-.main-page__logo {
-    width: 4rem;
+.main-page__footer {
+    background-color: rgb(110, 109, 109);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+    height: max-content;
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.footer-text {
+    color: rgba(255, 255, 255, 0.397);
+}
+
+.accueil-swiper__slide {
+    height: 20rem;
+    background-color: peachpuff;
+}
+
+.accueil-swiper__slide {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.accueil-swiper__slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.accueil-swiper__slide-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 50%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: 1rem;
+}
+
+.accueil-swiper__slide-text {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.accueil-swiper__slide-button {
+    font-size: medium;
+    width: 7rem;
+    height: 2rem;
 }
 
 .btn {
@@ -42,117 +92,202 @@ body {
     border-width: 0.1rem;
 }
 
-.main-page__account {
-    width: 6rem;
-    height: 3rem;
+/* Spécifique desktop */
+@media(min-width: 768px) {
+
+    .main-page {
+        min-height: 75vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-page__header {
+        background-color: white;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
+    }
+
+    .main-page__logo {
+        width: 4rem;
+    }
+
+    .main-page__account {
+        width: 6rem;
+        height: 3rem;
+        background-color: transparent;
+        border: none;
+    }
+
+    .parameter__image {
+        width: 2rem;
+        cursor: pointer;
+    }
+
+    .mon-compte__info-bulle {
+        background-color: white;
+        width: 10rem;
+        height: 8rem;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        position: absolute;
+        transform: translate(-5rem, 1rem);
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .mon-compte__info-bulle-details,
+    .mon-compte__info-bulle-deconnexion {
+        margin-top: 0.5rem;
+        border-radius: 0.5rem;
+        height: 2rem;
+    }
+
+    .main-page__content {
+        background-color: white;
+        border-radius: 1rem;
+        margin-right: 10rem;
+        margin-left: 10rem;
+        flex: 1;
+        padding: 1rem;
+        min-height: 75vh;
+    }
+
+    .accueil-swiper__slide {
+        height: 30rem;
+    }
+
+    .parameter__title {
+        font-size: medium;
+    }
+
+    .choix__langues {
+        display: flex;
+        justify-content: center;
+    }
+
+    .choix__langue {
+        margin-left: 0.4rem;
+        margin-right: 0.4rem;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        border: none;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .choix__langue.selected {
+        border: 2px solid red;
+    }
+
+    .choix__langue:hover {
+        box-shadow: 2px 2px 2px 1px rgba(201, 18, 70, 0.404);
+    }
+
+    .choix__langue-flag {
+        width: 2rem;
+        border-radius: 2rem;
+    }
+
+    .hidden-desktop {
+        display: none;
+    }
+
 }
 
-.mon-compte__info-bulle {
-    background-color: white;
-    width: 10rem;
-    height: 8rem;
-    border-radius: 0.5rem;
-    padding: 1rem;
-    position: absolute;
-    transform: translate(-5rem, 1rem);
-    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+@media(max-width: 767px) {
 
-    display: flex;
-    flex-direction: column;
-    justify-content: end;
-}
+    .main-page__header {
+        background-color: white;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 2rem;
 
-.mon-compte__info-bulle-details,
-.mon-compte__info-bulle-deconnexion {
-    margin-top: 0.5rem;
-    border-radius: 0.5rem;
-    height: 2rem;
-}
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 100; 
+    }
 
-.main-page__footer {
-    background-color: rgb(110, 109, 109);
-    padding-top: 1rem;
-    display: flex;
-    justify-content: space-around;
-    height: max-content;
-    width: 100%;
-    margin-top: 2rem;
-}
+    .main-page__title {
+        font-size: small;
+    }
 
-.footer-categorie {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: solid;
-    border-color: rgb(171, 169, 169);
-    border-left: 0.1px;
-    border-top: transparent;
-    border-bottom: transparent;
+    .main-page__account {
+        background-color: transparent;
+        border: none;
+    }
 
-    color: rgb(171, 169, 169);
-}
+    .hidden-mobile {
+        display: none;
+    }
 
-.footer-categorie__links {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding-left: 10rem;
-}
+    .burger-menu__image {
+        height: 2em;
+        transition: transform 0.5s ease;
+    }
+    
+    .rotated .burger-menu__image {
+        transform: rotate(90deg);
+    }
 
-.footer-categorie__link {
-    margin-bottom: 1rem;
-    color: inherit;
-}
+    .mon-compte__info-bulle {
+        position: fixed;
+        left: 0;
+        height: 100%;
+        background-color: white;
+        z-index: 99;
+        width: 100%;
+    }
 
-.main-page__content {
-    background-color: white;
-    border-radius: 1rem;
-    margin-right: 10rem;
-    margin-left: 10rem;
-    flex: 1;
-    padding: 1rem;
-}
+    .main-page__content {
+        margin-top: 5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+        background-color: white;
+        border-radius: 1rem;
+        padding: 1rem;
+        min-height: 75vh;
+    }
 
-.accueil-swiper__slide {
-    height: 20rem;
-    background-color: peachpuff;
-}
+    .mon-compte__info-bulle {
+        margin-top: 1rem;
+        padding: 1rem;
+    }
 
-.accueil-swiper__slide {
-    position: relative; /* Nécessaire pour positionner l'overlay */
-    width: 100%; /* Largeur fixe */
-    height: 30rem; /* Hauteur fixe */
-    overflow: hidden; /* Masque tout débordement */
-}
+    .choix__langues {
+        display: flex;
+        justify-content: center;
+    }
 
-.accueil-swiper__slide-image {
-    width: 100%;
-    height: 100%;
-    object-fit: fill; /* Force l'image à remplir le conteneur sans déformation */
-}
+    .choix__langue.selected {
+        border: 2px solid red;
+    }
 
-.accueil-swiper__slide-overlay {
-    position: absolute; /* Positionne l'overlay au-dessus de l'image */
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 50%; /* Hauteur du dégradé */
-    background: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)); /* Dégradé noir */
-    display: flex;
-    align-items: flex-start; /* Aligne le texte en bas */
-    justify-content: flex-end;
-    flex-direction: column;
-    padding: 1rem; /* Espacement autour du texte */
-}
+    .choix__langue:hover {
+        box-shadow: 2px 2px 2px 1px rgba(201, 18, 70, 0.404);
+    }
 
-.accueil-swiper__slide-text {
-    color: white; /* Texte blanc */
-    font-size: 1.5rem; /* Ajustez selon vos préférences */
-}
+    .choix__langue-flag {
+        width: 2rem;
+        border-radius: 2rem;
+    }
 
-.accueil-swiper__slide-button {
-    font-size: medium;
-    width: 7rem;
-    height: 2rem;
+    .parameter__title {
+        font-size: small;
+    }
+
+    .accueil-swiper__slide {
+        height: 18rem;
+    }
+
 }

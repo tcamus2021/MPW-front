@@ -1,3 +1,18 @@
 {
-    "accueil.description": "accueil.description.francais"
+    "layout.header.title": "Mon Site Personnel",
+    "layout.header.parametres.title": "Paramètres",
+    "layout.header.parametres.langues": "Choix de la langue",
+    "layout.footer.made.in": "Application web réalisé par Tanguy CAMUS",
+
+    "accueil.title": "Accueil",
+    "accueil.description": "Bienvenue sur mon application web qui a de multiples fonctionnalités.",
+    "accueil.description.part1": "Premièrement, l'application me sert à apprendre à gérer toutes les couches, de la création à la mise en ligne !",
+    "accueil.description.part2": "Ensuite, que ce soit dans le cadre d'un recrutement ou non, on peut se renseigner sur moi d'un point de vue professionnel et retrouver les sources de mon travail.",
+    "accueil.slide.decouvrir": "Découvrir",
+
+    "parcours.scolaire.title": "Parcours Scolaire",
+
+    "parcours.professionnel.title": "Parcours Professionnel",
+
+    "activite.title": "Activité Personnelle"
 }
