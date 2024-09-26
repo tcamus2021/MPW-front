@@ -1,3 +1,18 @@
 {
-    "accueil.description": "accueil.description.english"
+    "layout.header.title": "My Personal Website",
+    "layout.header.parametres.title": "Settings",
+    "layout.header.parametres.langues": "Language Selection",
+    "layout.footer.made.in": "Web application made by Tanguy CAMUS",
+
+    "accueil.title": "Home",
+    "accueil.description": "Welcome to my web application which has multiple features.",
+    "accueil.description.part1": "First, the application helps me learn how to manage all layers, from creation to deployment!",
+    "accueil.description.part2": "Then, whether it's for recruitment or not, you can learn about me from a professional standpoint and find the sources of my work.",
+    "accueil.slide.decouvrir": "Discover",
+
+    "parcours.scolaire.title": "Educational Background",
+
+    "parcours.professionnel.title": "Professional Background",
+
+    "activite.title": "Personal Activities"
 }

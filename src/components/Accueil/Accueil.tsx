@@ -1,36 +1,39 @@
-import Layout from "../Layout";
 import { register } from 'swiper/element/bundle';
-import Slide from "./Slide";
-import { FormattedMessage } from "react-intl";
+import Slide from "./Slide/Slide";
+import { FormattedMessage, useIntl } from "react-intl";
+import SwiperData from '../../types/SwiperData';
 
 register();
 
 const Accueil = () => {
-    const swiperData = [
+    const intl = useIntl();
+
+    const swiperData: SwiperData[] = [
         {
-            text: 'Parcours scolaire',
-            buttonText: 'Découvrir',
+            text: intl.formatMessage({ id: 'parcours.scolaire.title' }),
+            buttonText: intl.formatMessage({ id: 'accueil.slide.decouvrir' }),
             url: '/',
             imageUrl: '/image-paysage-1.jpeg'
         },
         {
-            text: 'Parcours Profesionnel',
-            buttonText: 'Découvrir',
+            text: intl.formatMessage({ id: 'parcours.professionnel.title' }),
+            buttonText: intl.formatMessage({ id: 'accueil.slide.decouvrir' }),
             url: '/',
             imageUrl: '/image-paysage-2.avif'
         },
         {
-            text: 'Activités personnel',
-            buttonText: 'Découvrir',
+            text: intl.formatMessage({ id: 'activite.title' }),
+            buttonText: intl.formatMessage({ id: 'accueil.slide.decouvrir' }),
             url: '/',
             imageUrl: '/image-paysage-3.avif'
         },
     ];
     return (
-        <Layout>
-            <h2>Accueil</h2>
+        <div>
+            <h2><FormattedMessage id="accueil.title" defaultMessage="" /></h2>
             <p><FormattedMessage id="accueil.description" /></p>
-            <p>Bonjour, bienvenue sur l'accueil d'un site inutile</p>
+            <p><FormattedMessage id="accueil.description.part1" /></p>
+            <p><FormattedMessage id="accueil.description.part2" /></p>
             <swiper-container 
                 slides-per-view="1" 
                 navigation="true"
@@ -43,7 +46,7 @@ const Accueil = () => {
                     </swiper-slide>
                 ))}
             </swiper-container>
-        </Layout>
+        </div>
     );
 };
 
