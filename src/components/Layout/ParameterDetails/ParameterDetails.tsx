@@ -1,9 +1,23 @@
 import { FormattedMessage } from "react-intl";
 import flagFr from "flag-icon-css/flags/1x1/fr.svg";
 import flagEn from "flag-icon-css/flags/1x1/gb.svg";
+import './parameterDetails.css';
 
-const MonCompteInfoBulle = ({ locale, setLocale }: any) => (
-    <div className="mon-compte__info-bulle">
+interface ParameterDetailsProps {
+    locale: string,
+    setLocale(locale: string): void
+};
+
+/**
+ * Permet de gérer les paramètres du site
+ * 
+ * @param props propriété du composant avec comme attribut :
+ * - locale : langue du site
+ * - setLocale : fonction permettant le changement de la langue 
+ * @return affichage des paramètres de l'application
+ */
+const ParameterDetails = ({ locale, setLocale }: ParameterDetailsProps) => (
+    <div className="parameter">
         <h2 className="parameter__title"><FormattedMessage id="layout.header.parametres.langues" defaultMessage="" /></h2>
         <div className="choix__langues">
             <button className={locale === 'fr' ? "choix__langue selected" : "choix__langue"} onClick={() => setLocale('fr')}>
@@ -18,4 +32,4 @@ const MonCompteInfoBulle = ({ locale, setLocale }: any) => (
     </div>
 );
 
-export default MonCompteInfoBulle;
+export default ParameterDetails;

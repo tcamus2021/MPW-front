@@ -1,0 +1,106 @@
+.choix__langue {
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    width: 5rem;
+    padding: 0;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Spécifique desktop */
+@media(min-width: 768px) {
+    .parameter {
+        background-color: white;
+        width: 10rem;
+        height: 8rem;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        position: absolute;
+        transform: translate(-5rem, 1rem);
+        box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.2);
+
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .parameter-details,
+    .parameter-deconnexion {
+        margin-top: 0.5rem;
+        border-radius: 0.5rem;
+        height: 2rem;
+    }
+
+    .parameter__title {
+        font-size: medium;
+    }
+
+    .choix__langues {
+        display: flex;
+        justify-content: center;
+    }
+
+    .choix__langue {
+        margin-left: 0.4rem;
+        margin-right: 0.4rem;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        border: none;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
+
+    .choix__langue.selected {
+        border: 2px solid red;
+    }
+
+    .choix__langue:hover {
+        box-shadow: 2px 2px 2px 1px rgba(201, 18, 70, 0.404);
+    }
+
+    .choix__langue-flag {
+        width: 2rem;
+        border-radius: 2rem;
+    }
+}
+
+@media(max-width: 767px) {
+    .parameter {
+        position: fixed;
+        left: 0;
+        height: 100%;
+        background-color: white;
+        z-index: 99;
+        width: 100%;
+    }
+
+    .parameter {
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+    .choix__langues {
+        display: flex;
+        justify-content: center;
+    }
+
+    .choix__langue.selected {
+        border: 2px solid red;
+    }
+
+    .choix__langue:hover {
+        box-shadow: 2px 2px 2px 1px rgba(201, 18, 70, 0.404);
+    }
+
+    .choix__langue-flag {
+        width: 2rem;
+        border-radius: 2rem;
+    }
+
+    .parameter__title {
+        font-size: small;
+    }
+
+}

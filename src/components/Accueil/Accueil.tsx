@@ -1,10 +1,16 @@
 import { register } from 'swiper/element/bundle';
-import Slide from "./Slide/Slide";
 import { FormattedMessage, useIntl } from "react-intl";
-import SwiperData from '../../types/SwiperData';
+import SwiperData from '@src/types/SwiperData';
+import Slide from './Slide/Slide';
+import './accueil.css';
 
 register();
 
+/**
+ * Affichage de la page d'accueil
+ * 
+ * @return l'affichage de la page d'accueil
+ */
 const Accueil = () => {
     const intl = useIntl();
 
@@ -28,6 +34,7 @@ const Accueil = () => {
             imageUrl: '/image-paysage-3.avif'
         },
     ];
+
     return (
         <div>
             <h2><FormattedMessage id="accueil.title" defaultMessage="" /></h2>
