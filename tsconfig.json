@@ -1,19 +1,23 @@
 {
   "files": [],
   "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
+    { 
+      "path": "./tsconfig.app.json" 
+    },
+    { 
+      "path": "./tsconfig.node.json" 
+    }
   ],
   "compilerOptions": {
     "baseUrl": "./", 
     "paths": {
       "@src/*": ["src/*"]
     },
-    "jsx": "react-jsx", // ou "react" pour les versions plus anciennes de React (<17)
+    "jsx": "react-jsx",
     "lib": ["ESNext", "DOM"],
     "target": "ESNext", 
     "module": "ESNext",
-    "types": ["jest", "node"]
-    ,"esModuleInterop": true
-  },
+    "types": ["jest", "@testing-library/jest-dom", "node"],
+    "esModuleInterop": true,
+  }
 }

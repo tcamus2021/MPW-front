@@ -3,7 +3,7 @@ import 'ts-node/register';
 
 const config: Config.InitialOptions = {
   preset: 'ts-jest',
-  testEnvironment: 'node',
+  testEnvironment: 'jest-environment-jsdom',
   moduleNameMapper: {
     '^@src/(.*)$': '<rootDir>/src/$1',
   },

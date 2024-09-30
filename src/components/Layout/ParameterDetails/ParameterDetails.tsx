@@ -20,11 +20,19 @@ const ParameterDetails = ({ locale, setLocale }: ParameterDetailsProps) => (
     <div className="parameter">
         <h2 className="parameter__title"><FormattedMessage id="layout.header.parametres.langues" defaultMessage="" /></h2>
         <div className="choix__langues">
-            <button className={locale === 'fr' ? "choix__langue selected" : "choix__langue"} onClick={() => setLocale('fr')}>
+            <button 
+                className={locale === 'fr' ? "choix__langue selected" : "choix__langue"} 
+                onClick={() => setLocale('fr')}
+                title="Français"
+            >
                 <p>Français</p>
                 <img className="choix__langue-flag" src={flagFr} />
             </button>
-            <button className={locale === 'en' ? "choix__langue selected" : "choix__langue"} onClick={() => setLocale('en')}>
+            <button 
+                className={locale === 'en' ? "choix__langue selected" : "choix__langue"} 
+                onClick={() => setLocale('en')}
+                title="English"
+            >
                 <p>English</p>
                 <img className="choix__langue-flag" src={flagEn} />
             </button>

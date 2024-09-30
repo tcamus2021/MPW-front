@@ -29,6 +29,11 @@
 }
 
 @media(max-width: 767px) {
+    .main-page__logo {
+        width: 3rem;
+        margin-left: 0.5rem
+    }
+
     .main-page__header {
         background-color: white;
         padding-top: 1rem;

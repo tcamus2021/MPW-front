@@ -1,8 +1,13 @@
 {
     "layout.header.title": "My Personal Website",
+    "layout.header.image.description": "Go home",
     "layout.header.parametres.title": "Settings",
+    "layout.header.parametres.description": "Open parameters",
     "layout.header.parametres.langues": "Language Selection",
     "layout.footer.made.in": "Web application made by Tanguy CAMUS",
+
+    "back.button.title": "Back",
+    "back.button.description": "Back to home",
 
     "accueil.title": "Home",
     "accueil.description": "Welcome to my web application which has multiple features.",

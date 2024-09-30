@@ -6,12 +6,24 @@ import Layout from './components/Layout/Layout';
 import messagesFr from './lang/fr.json';
 import messagesEn from './lang/en.json';
 import { getDefaultLanguage } from './utils/lang'
+import Ecole from './components/Ecole/Ecole';
+import Travail from './components/Travail/Travail';
+import Loisirs from './components/Loisirs/Loisirs';
 
 // Routes de l'application
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Accueil />,
+  },{
+    path: "/parcours-scolaire",
+    element: <Ecole />,
+  },{
+    path: "/parcours-professionnel",
+    element: <Travail />,
+  },{
+    path: "/loisirs",
+    element: <Loisirs />,
   }
 ]);
 

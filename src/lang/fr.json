@@ -1,8 +1,13 @@
 {
     "layout.header.title": "Mon Site Personnel",
+    "layout.header.image.description": "Aller à l'accueil",
     "layout.header.parametres.title": "Paramètres",
+    "layout.header.parametres.description": "Ouvrir les paramètres",
     "layout.header.parametres.langues": "Choix de la langue",
     "layout.footer.made.in": "Application web réalisé par Tanguy CAMUS",
+
+    "back.button.title": "Retour",
+    "back.button.description": "Retourner à l'accueil",
 
     "accueil.title": "Accueil",
     "accueil.description": "Bienvenue sur mon application web qui a de multiples fonctionnalités.",
