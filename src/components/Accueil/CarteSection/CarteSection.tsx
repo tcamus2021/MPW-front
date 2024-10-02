@@ -7,7 +7,7 @@ interface SlideProps {
 
 interface CustomCSSProperties extends React.CSSProperties {
     '--slide-color'?: string;
-  }
+}
 
 /**
  * Permet d'afficher une prévisualisation d'une page su site sur l'accueil

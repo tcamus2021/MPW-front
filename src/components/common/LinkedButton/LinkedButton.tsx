@@ -14,7 +14,7 @@ interface LinkedButtonProps {
  */
 const LinkedButton = ({ titre, description, url, additionnalClass, withArrow = true }: LinkedButtonProps) => (
     <a href={url} className="unstyled-link" title={description}>
-        <button className={"btn accueil-swiper__slide-button " + additionnalClass}>
+        <button className={"btn accueil-swiper__slide-button " + additionnalClass} tabIndex={-1}>
             {withArrow && <img src='arrow-button.svg' className="arrow-button" aria-hidden='true'/>}
             {titre}
         </button>
