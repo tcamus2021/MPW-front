@@ -15,7 +15,8 @@
     "accueil.description.part2": "Then, whether it's for recruitment or not, you can learn about me from a professional standpoint and find the sources of my work.",
     "accueil.slide.decouvrir": "Discover",
 
-    "parcours.scolaire.title": "Educational Background",  
+    "parcours.scolaire.title": "Educational Background",
+    "parcours.scolaire.button.description": "More details",
     "parcours.scolaire.MS2D.level": "Master's degree (BAC+5)",
     "parcours.scolaire.MS2D.title": "Manager of Digital Solutions and Data",
     "parcours.scolaire.MS2D.city": "ENI, Nantes",
@@ -40,5 +41,20 @@
 
     "parcours.professionnel.title": "Professional Background",
 
-    "activite.title": "Personal Activities"
+    "activite.title": "Personal Activities",
+    "activite.bateau.title": "Boating",
+    "activite.bateau.description.1": "Since my childhood in Penmarc'h, a coastal town in Brittany, the sea has been an integral part of my life. Growing up by the water, I have always been drawn to the marine horizons and the endless possibilities the ocean offers. This closeness to the sea naturally led me to obtain my coastal license, allowing me to navigate autonomously. I am currently working on obtaining my inland waterways license to explore rivers and canals, with the ambition of also passing my offshore license to navigate further afield.",
+    "activite.bateau.description.2": "In the coming years, I dream of owning a small boat. This project represents an important step in fully embracing my passion. Having my own boat would allow me to navigate freely, explore new shores, and deepen my maritime knowledge. It is a personal goal that combines both my acquired skills and my desire to stay connected to the sea throughout my life.",
+    "activite.developpement.title": "Development",
+    "activite.developpement.description.1": "As a developer, I dedicate part of my free time to technology watch. I enjoy keeping up with new trends, emerging frameworks, and innovations in the development field. This approach not only helps me improve my skills but also allows me to anticipate the changes in my profession.",
+    "activite.developpement.description.2": "In parallel, I regularly work on personal projects that let me explore technologies beyond the professional scope. This website is a concrete example. It allows me to experiment with new techniques and apply my skills while creating something meaningful to me.",
+    "activite.sport.title": "Sports",
+    "activite.sport.description.1": "Sports have always played an important role in my life. Since childhood, I have had the opportunity to explore various sports, each bringing me unique skills and experiences. For four years, I practiced table tennis, a sport that taught me focus, quick reactions, and precision. Then, I discovered fencing, a discipline that combines strategy, agility, and control, which I practiced for three years with passion.",
+    "activite.sport.description.2": "Beyond these technical sports, I also experimented with other physical activities such as athletics and badminton, which I practiced for one year each. These sports helped me develop a solid general fitness and a taste for endurance and coordination. Every new discipline enriched my understanding of sport and refined my physical mastery.",
+    "activite.sport.description.3": "In recent years, I have turned to weight training, which I have been practicing for five years. It is a sport that allows me to work not only on my physical strength but also on my personal discipline and consistency. Weight training has become a key part of my routine, as it brings me balance and daily well-being.",
+    "activite.peche.title": "Fishing",
+    "activite.peche.description.1": "Fishing is an activity that naturally ties into my passion for boating and brings back childhood memories. I grew up fishing with my father or cousin, whether on the coast or at sea. These shared moments taught me patience, observation, and, most importantly, the importance of enjoying the present moment. Today, fishing remains a way for me to reconnect with those memories while combining my love for the sea and nature.",
+    "activite.detente.title": "Relaxation",
+    "activite.detente.description.1": "Relaxation is an integral part of my daily life, and I particularly enjoy immersing myself in captivating series. Whether it's Game of Thrones, The Walking Dead, Breaking Bad, Narcos, or Peaky Blinders, I am always looking for immersive stories and complex characters that keep me hooked. These series allow me to escape and experience thrilling adventures from my couch.",
+    "activite.detente.description.2": "At the same time, I am a fan of video games, particularly on consoles. It's the perfect way for me to unwind after a busy day."
 }

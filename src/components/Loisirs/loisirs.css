@@ -1,0 +1,80 @@
+.loisirs-page__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.loisirs-page__container-item {
+    background-color: var(--loisirs-section--color);
+    display: flex;
+    flex-wrap: nowrap;
+    height: 8rem;
+    color: white;
+    border-radius: 1rem;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+
+.loisirs-page__container-item-left {
+    width: 50%;
+    height: 100%;
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+.loisirs-page__container-item-left-image {
+    height: 1rem;
+    color: white;
+    margin-right: 0.4rem;
+}
+
+.loisirs-page__container-item-right {
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+}
+
+.loisirs-page__container-item-right-image {
+    height: 5rem;
+}
+
+.loisirs-page__modal-presentation {
+    background-color: var(--loisirs-section--color);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.loisirs-page__modal-descriptions {
+    text-align: start;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.loisirs-page__modal-image {
+    height: 4rem;
+}
+
+.loisirs-page__modal-description {
+    margin-bottom: 1.5rem;
+}
+
+/* Spécifique mobile */
+@media(max-width: 767px) {
+    .loisirs-page__container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+}

@@ -16,6 +16,7 @@
     "accueil.slide.decouvrir": "Découvrir",
 
     "parcours.scolaire.title": "Parcours Scolaire",
+    "parcours.scolaire.button.description": "Plus de détails",
     "parcours.scolaire.MS2D.level": "BAC+5",
     "parcours.scolaire.MS2D.title": "Manager de Solutions Digitales et Data",
     "parcours.scolaire.MS2D.city": "ENI, Nantes",
@@ -40,5 +41,20 @@
 
     "parcours.professionnel.title": "Parcours Professionnel",
 
-    "activite.title": "Activité Personnelle"
+    "activite.title": "Activité Personnelle",
+    "activite.bateau.title": "Bateau",
+    "activite.bateau.description.1": "Depuis mon enfance à Penmarc'h, une ville côtière de Bretagne, la mer fait partie intégrante de ma vie. Ayant grandi au bord de l'eau, j'ai toujours été attiré par les horizons marins et les possibilités infinies qu'offre l'océan. Cette proximité avec la mer m'a naturellement conduit à passer mon permis côtier, me permettant de naviguer en toute autonomie. Actuellement, je travaille à obtenir mon permis fluvial pour explorer les rivières et canaux, avec pour ambition de passer également le permis hauturier, afin de naviguer au large sans limites.",
+    "activite.bateau.description.2": "Dans les années à venir, je rêve d'acquérir un petit bateau. Ce projet représente pour moi une étape importante pour vivre pleinement ma passion. Avoir mon propre bateau me permettrait de naviguer librement, d'explorer de nouvelles côtes et d'approfondir mes connaissances maritimes. C'est un objectif personnel qui combine à la fois mes compétences acquises et ma volonté de rester connecté à la mer tout au long de ma vie.",
+    "activite.developpement.title": "Développement",
+    "activite.developpement.description.1": "En tant que développeur, je consacre une partie de mon temps libre à la veille technologique. J'aime rester à jour sur les nouvelles tendances, les frameworks émergents, et les innovations dans le domaine du développement. Cette démarche me permet non seulement d'améliorer mes compétences, mais aussi d'anticiper les évolutions dans mon métier.",
+    "activite.developpement.description.2": "Parallèlement, je travaille régulièrement sur des projets personnels qui me permettent d'explorer des technologies en dehors du cadre professionnel. Ce site en est un exemple concret. Il me permet d'expérimenter de nouvelles techniques et de mettre en pratique mes compétences tout en développant quelque chose de significatif pour moi.",
+    "activite.sport.title": "Sports",
+    "activite.sport.description.1": "Le sport a toujours occupé une place importante dans ma vie. Depuis mon enfance, j'ai eu la chance d'explorer plusieurs disciplines sportives, chacune m'apportant des compétences et des expériences uniques. Pendant quatre ans, j'ai pratiqué le tennis de table, un sport qui m'a appris la concentration, la rapidité de réaction et la précision. Ensuite, j'ai découvert l'escrime, une discipline qui allie stratégie, agilité et contrôle, et que j'ai pratiquée pendant trois ans avec passion.",
+    "activite.sport.description.2": "Au-delà de ces sports techniques, j'ai également expérimenté des activités physiques plus diverses, comme l'athlétisme et le badminton, que j'ai pratiqués pendant un an chacun. Ces sports m'ont permis de développer une bonne condition physique générale et un goût pour l'endurance et la coordination. Chaque nouvelle discipline a enrichi ma compréhension du sport et m'a permis d'affiner ma maîtrise corporelle.",
+    "activite.sport.description.3": "Ces dernières années, je me suis tourné vers la musculation, que je pratique depuis cinq ans. C'est un sport qui me permet de travailler non seulement ma force physique, mais aussi ma discipline personnelle et ma régularité. La musculation est devenue un élément clé de ma routine, car elle m'apporte un équilibre et un bien-être quotidien.",
+    "activite.peche.title": "Pêche",
+    "activite.peche.description.1": "La pêche est une activité qui se lie naturellement à ma passion pour le bateau et qui me ramène à des souvenirs d'enfance. J'ai grandi en pêchant avec mon père ou mon cousin, que ce soit sur la côte ou en mer. Ces moments partagés m'ont appris la patience, l'observation, et surtout l'importance de profiter de l'instant présent. Aujourd'hui, la pêche reste pour moi une manière de me reconnecter à ces souvenirs tout en combinant mon amour pour la mer et la nature.",
+    "activite.detente.title": "Détente",
+    "activite.detente.description.1": "La détente fait partie intégrante de mon quotidien, et j'aime particulièrement me plonger dans des séries captivantes. Que ce soit Game of Thrones, The Walking Dead, Breaking Bad, Narcos, ou Peaky Blinders, je suis toujours à la recherche de récits immersifs et de personnages complexes qui me tiennent en haleine. Ces séries me permettent de m'évader et de vivre des aventures passionnantes depuis mon canapé.",
+    "activite.detente.description.2": "En parallèle, je suis un amateur de jeux vidéo, en particulier sur console. C'est une manière parfaite pour moi de me détendre après une journée bien remplie."
 }

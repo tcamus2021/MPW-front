@@ -39,10 +39,14 @@ const messages: { [key: string]: any } = {
  * @return l'affichage de l'application
  */
 const App = () => {
-  const [locale, setLocale] = useState(getDefaultLanguage());
+  const [locale, setLocale] = useState<string>(getDefaultLanguage());
+  const handleChangeLanguage = (newLocale: string): void => {
+    localStorage.setItem('appLanguage', newLocale);
+    setLocale(newLocale);
+  }
   return (
     <IntlProvider locale={locale} messages={messages[locale]}>
-      <Layout locale={locale} setLocale={setLocale}>
+      <Layout locale={locale} setLocale={handleChangeLanguage}>
         <RouterProvider router={router} />
       </Layout>
     </IntlProvider>

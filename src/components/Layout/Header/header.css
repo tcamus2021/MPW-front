@@ -63,8 +63,4 @@
         height: 2em;
         transition: transform 0.5s ease;
     }
-    
-    .rotated .burger-menu__image {
-        transform: rotate(90deg);
-    }
 }

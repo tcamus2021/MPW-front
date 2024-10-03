@@ -35,6 +35,19 @@ body {
     color: inherit; 
 }
 
+.close-btn {
+    height: 1rem;
+    background-color: transparent;
+    border: none;
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.close-btn-image {
+    height: 1rem;
+}
+
 /* Spécifique desktop */
 @media(min-width: 768px) {
     .main-page {

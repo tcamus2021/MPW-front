@@ -21,7 +21,7 @@
 .ecole-page__selector[aria-selected="true"] {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
-  }
+}
 
 .ecole-page__previsualisation {
     display: flex;

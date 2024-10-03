@@ -39,11 +39,15 @@ const Header = ({ locale, setLocale }: HeaderProps) => {
                     <img className="parameter__image" src="parametre_icon.png" aria-hidden="true" />
                 </button>
                 <button
-                    className={`main-page-header__parameter btn hidden-desktop ${isPopinOpen ? 'rotated' : ''}`}
+                    className='main-page-header__parameter btn hidden-desktop'
                     onClick={() => setPopinOpen(!isPopinOpen)}
                     title={intl.formatMessage({ id: 'layout.header.parametres.description' })}
                 >
-                    <img className="burger-menu__image" src="burger-menu.svg" aria-hidden="true" />
+                    {!isPopinOpen ? (
+                        <img className="burger-menu__image" src="burger-menu.svg" aria-hidden="true" />
+                    ) : (
+                        <img className="burger-menu__image" src="close.svg" aria-hidden="true" />
+                    )}
                 </button>
                 {isPopinOpen && (
                     <MonCompteInfoBulle locale={locale} setLocale={setLocale} />
