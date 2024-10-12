@@ -39,7 +39,7 @@ const TravailModal = ({ selectedTravail }: TravailModalProps): JSX.Element => {
                         <h4><FormattedMessage id="parcours.professionnel.modal.competences.generales.title"/></h4>
                         <ul>
                             {selectedTravail.softSkills.map(skill => (
-                                <li><FormattedMessage id={skill} /></li>
+                                <li key={skill}><FormattedMessage id={skill} /></li>
                             ))}
                         </ul>
                     </div>
@@ -48,7 +48,7 @@ const TravailModal = ({ selectedTravail }: TravailModalProps): JSX.Element => {
                         <h4><FormattedMessage id="parcours.professionnel.modal.competences.tech.title"/></h4>
                             <ul>
                                 {selectedTravail.competenceTechnique.map(skill => (
-                                    <li>{skill}</li>
+                                    <li key={skill}>{skill}</li>
                                 ))}
                             </ul>
                         </div>

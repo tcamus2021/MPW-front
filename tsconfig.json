@@ -19,5 +19,7 @@
     "module": "ESNext",
     "types": ["jest", "@testing-library/jest-dom", "node"],
     "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "Bundler"
   }
 }

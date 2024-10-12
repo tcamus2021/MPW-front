@@ -10,9 +10,9 @@ interface LinkedButtonProps {
  * Permet de créer un bouton lien
  * 
  * @param {LinkedButtonProps} prop propriété du composant
- * @return Affichage d'un bouton lien
+ * @return {JSX.Element} Affichage d'un bouton lien
  */
-const LinkedButton = ({ titre, description, url, additionnalClass, withArrow = true }: LinkedButtonProps) => (
+const LinkedButton = ({ titre, description, url, additionnalClass, withArrow = true }: LinkedButtonProps): JSX.Element => (
     <a href={url} className="unstyled-link" title={description}>
         <button className={"btn accueil-swiper__slide-button " + additionnalClass} tabIndex={-1}>
             {withArrow && <img src='arrow-button.svg' className="arrow-button" aria-hidden='true'/>}

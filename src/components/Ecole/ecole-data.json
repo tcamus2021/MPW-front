@@ -1,0 +1,49 @@
+[
+    {
+        "level": "parcours.scolaire.MS2D.level",
+        "color": "#F26666",
+        "description": [
+            "parcours.scolaire.MS2D.description.1",
+            "parcours.scolaire.MS2D.description.2",
+            "parcours.scolaire.MS2D.description.3"
+        ],
+        "diplome": "parcours.scolaire.MS2D.title",
+        "logo": "./logo_ENI.png",
+        "annee": "2022 - 2023",
+        "localisation": "parcours.scolaire.MS2D.city"
+    },
+    {
+        "level": "parcours.scolaire.CDA.level",
+        "color": "#F28963",
+        "description": [
+            "parcours.scolaire.CDA.description.1",
+            "parcours.scolaire.CDA.description.2",
+            "parcours.scolaire.CDA.description.3"
+        ],
+        "diplome": "parcours.scolaire.CDA.title",
+        "logo": "./logo_ENI.png",
+        "annee": "2021",
+        "localisation": "parcours.scolaire.CDA.city"
+    },
+    {
+        "level": "parcours.scolaire.DUT.level",
+        "color": "#F2BC79",
+        "description": [
+            "parcours.scolaire.DUT.description.1",
+            "parcours.scolaire.DUT.description.2"
+        ],
+        "diplome": "parcours.scolaire.DUT.title",
+        "logo": "./Logo_IUT_Nantes.png",
+        "annee": "2018 - 2020",
+        "localisation": "parcours.scolaire.DUT.city"
+    },
+    {
+        "level": "parcours.scolaire.BAC.level",
+        "color": "#F2CDA0",
+        "description": ["parcours.scolaire.BAC.description.1"],
+        "diplome": "parcours.scolaire.BAC.title",
+        "logo": "./logo_lycee.png",
+        "annee": "2016 - 2018",
+        "localisation": "parcours.scolaire.BAC.city"
+    }
+]

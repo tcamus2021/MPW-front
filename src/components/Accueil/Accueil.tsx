@@ -9,9 +9,9 @@ register();
 /**
  * Affichage de la page d'accueil
  * 
- * @return l'affichage de la page d'accueil
+ * @return {JSX.Element} l'affichage de la page d'accueil
  */
-const Accueil = () => {
+const Accueil = (): JSX.Element => {
     const intl = useIntl();
 
     const cartes: CarteSectionType[] = [
@@ -52,14 +52,14 @@ const Accueil = () => {
                     autoplay="true"
                 >
                     {cartes.map(carte => (
-                        <swiper-slide>
+                        <swiper-slide key={carte.url}>
                             <CarteSection carte={carte} />
                         </swiper-slide>
                     ))}
                 </swiper-container>
             </div>
             <div className='hidden-mobile main-page__cartes-desktop'>
-                {cartes.map(carte => <CarteSection carte={carte} /> )}
+                {cartes.map(carte => <CarteSection key={carte.url} carte={carte} /> )}
             </div>
         </div>
     );

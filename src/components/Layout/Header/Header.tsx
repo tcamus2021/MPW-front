@@ -12,12 +12,10 @@ interface HeaderProps {
 /**
  * Entête de l'application
  * 
- * @param props propriété du composant avec comme attribut :
- * - locale : langue du site
- * - setLocale : fonction permettant le changement de la langue
- * @return affichage de l'entête de l'application
+ * @param props propriété du composant sous le format HeaderProps
+ * @return {JSX.Element}
  */
-const Header = ({ locale, setLocale }: HeaderProps) => {
+const Header = ({ locale, setLocale }: HeaderProps):JSX.Element => {
     const intl = useIntl();
 
     const popinButton = useRef(null);

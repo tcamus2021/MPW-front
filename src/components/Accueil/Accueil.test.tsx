@@ -9,7 +9,7 @@ jest.mock('swiper/element/bundle', () => ({
 }));
 
 // Mocking Slide component
-jest.mock('./Slide/Slide', () => () => <div>Mocked Slide Component</div>);
+jest.mock('./CarteSection/CarteSection', () => () => <div>Mocked Slide Component</div>);
 
 describe('Accueil Component', () => {
   const renderWithIntl = (component: JSX.Element) => {

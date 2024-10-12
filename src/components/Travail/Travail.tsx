@@ -23,7 +23,7 @@ const Travail = (): JSX.Element => {
             <div className="travail-page__container">
                 <div className="travail-page__timeline-container">
                     {historiqueTravail.map(travail => (
-                        <TravailDetails travail={travail} openDetails={() => setSelectedTravail(travail)} />
+                        <TravailDetails key={travail.dateDebut} travail={travail} openDetails={() => setSelectedTravail(travail)} />
                     ))}
                 </div>
             </div>

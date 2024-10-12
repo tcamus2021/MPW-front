@@ -36,9 +36,9 @@ const messages: { [key: string]: any } = {
 /**
  * Composant parent de l'application
  * 
- * @return l'affichage de l'application
+ * @return {JSX.Element} l'affichage de l'application
  */
-const App = () => {
+const App = (): JSX.Element => {
   const [locale, setLocale] = useState<string>(getDefaultLanguage());
   const handleChangeLanguage = (newLocale: string): void => {
     localStorage.setItem('appLanguage', newLocale);

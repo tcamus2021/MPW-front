@@ -10,13 +10,10 @@ interface LayoutProps {
 /**
  * Affiche l'englobant du site
  * 
- * @param props propriétés du composant avec comme attributs :
- * - chidren : l'enfant du composant
- * - locale : langue du site
- * - setLocale : fonction permettant le changement de la langue
- * @return affichage de l'englobant du site
+ * @param props propriétés du composant sous le format LayoutProps
+ * @return {JSX.Element}
  */
-const Layout = ({ children, locale, setLocale }: LayoutProps) => (
+const Layout = ({ children, locale, setLocale }: LayoutProps): JSX.Element => (
     <div className="main-page">
         <Header locale={locale} setLocale={setLocale} />
         <main className="main-page__content">

@@ -3,64 +3,20 @@ import BarreRetour from "../common/BarreRetour/BarreRetour";
 import EcoleDetails from "./EcoleDetails/EcoleDetails";
 import './ecole.css';
 import EcoleType from "@src/types/EcoleType";
-import { FormattedMessage, useIntl } from "react-intl";
+import { FormattedMessage } from "react-intl";
 import { getUrlParams } from "@src/utils/url";
+import ecoleData from "./ecole-data.json";
 
-const Ecole = () => {
-    const intl = useIntl();
+/**
+ * Affichage du parcours scolaire
+ * 
+ * @return {JSX.Element}
+ */
+const Ecole = (): JSX.Element => {
     const indexToOpen = getUrlParams('index');
     const [openedIndex, setOpenedIndex] = useState<number | null>(indexToOpen ? Number.parseInt(indexToOpen) : null);
     const handleOpenedIndexChange = (index: number | null): void => setOpenedIndex(openedIndex === index ? null : index);
-
-    const ecoles: EcoleType[] = [
-        {
-            level: intl.formatMessage({ id: "parcours.scolaire.MS2D.level" }),
-            color: "#F26666",
-            description: [
-                intl.formatMessage({ id: "parcours.scolaire.MS2D.description.1" }),
-                intl.formatMessage({ id: "parcours.scolaire.MS2D.description.2" }),
-                intl.formatMessage({ id: "parcours.scolaire.MS2D.description.3" })
-            ],
-            diplome: intl.formatMessage({ id: "parcours.scolaire.MS2D.title" }),
-            logo: "./logo_ENI.png",
-            annee: "2022 - 2023",
-            localisation: intl.formatMessage({ id: "parcours.scolaire.MS2D.city" })
-        },
-        {
-            level: intl.formatMessage({ id: "parcours.scolaire.CDA.level" }),
-            color: "#F28963",
-            description: [
-                intl.formatMessage({ id: "parcours.scolaire.CDA.description.1" }),
-                intl.formatMessage({ id: "parcours.scolaire.CDA.description.2" }),
-                intl.formatMessage({ id: "parcours.scolaire.CDA.description.3" })
-            ],
-            diplome: intl.formatMessage({ id: "parcours.scolaire.CDA.title" }),
-            logo: "./logo_ENI.png",
-            annee: "2021",
-            localisation: intl.formatMessage({ id: "parcours.scolaire.CDA.city" })
-        },
-        {
-            level: intl.formatMessage({ id: "parcours.scolaire.DUT.level" }),
-            color: "#F2BC79",
-            description: [
-                intl.formatMessage({ id: "parcours.scolaire.DUT.description.1" }),
-                intl.formatMessage({ id: "parcours.scolaire.DUT.description.2" })
-            ],
-            diplome: intl.formatMessage({ id: "parcours.scolaire.DUT.title" }),
-            logo: "./Logo_IUT_Nantes.png",
-            annee: "2018 - 2020",
-            localisation: intl.formatMessage({ id: "parcours.scolaire.DUT.city" })
-        },
-        {
-            level: intl.formatMessage({ id: "parcours.scolaire.BAC.level" }),
-            color: "#F2CDA0",
-            description: [intl.formatMessage({ id: "parcours.scolaire.BAC.description.1" })],
-            diplome: intl.formatMessage({ id: "parcours.scolaire.BAC.title" }),
-            logo: "./logo_lycee.png",
-            annee: "2016 - 2018",
-            localisation: intl.formatMessage({ id: "parcours.scolaire.BAC.city" })
-        },
-    ];
+    const ecoles: EcoleType[] = ecoleData;
 
     return (
         <div className="ecole-page">
@@ -68,7 +24,7 @@ const Ecole = () => {
             <h2><FormattedMessage id="parcours.scolaire.title" /></h2>
             <div className="ecole-page__list">
                 {ecoles.map((ecole, index) => (
-                    <EcoleDetails isOpen={openedIndex === index} openDetails={() => handleOpenedIndexChange(index)} ecole={ecole} />
+                    <EcoleDetails key={ecole.level} isOpen={openedIndex === index} openDetails={() => handleOpenedIndexChange(index)} ecole={ecole} />
                 ))}
             </div>
         </div>

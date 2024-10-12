@@ -11,12 +11,10 @@ interface ParameterDetailsProps {
 /**
  * Permet de gérer les paramètres du site
  * 
- * @param props propriété du composant avec comme attribut :
- * - locale : langue du site
- * - setLocale : fonction permettant le changement de la langue 
- * @return affichage des paramètres de l'application
+ * @param props propriété du composant sous le format ParameterDetailsProps
+ * @return {JSX.Element}
  */
-const ParameterDetails = ({ locale, setLocale }: ParameterDetailsProps) => (
+const ParameterDetails = ({ locale, setLocale }: ParameterDetailsProps): JSX.Element => (
     <div className="parameter">
         <h2 className="parameter__title"><FormattedMessage id="layout.header.parametres.langues" defaultMessage="" /></h2>
         <div className="choix__langues">

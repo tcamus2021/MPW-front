@@ -10,9 +10,9 @@ interface SlideProps {
  * Permet d'afficher une prévisualisation d'une page su site sur l'accueil
  * 
  * @param {SlideProps} props propriété de l'objet contenant les données de la slide à afficher 
- * @return l'affichage d'une prévisualisation d'une page su site sur l'accueil
+ * @return {JSX.Element} l'affichage d'une prévisualisation d'une page su site sur l'accueil
  */
-const CarteSection = ({ carte }: SlideProps) => (
+const CarteSection = ({ carte }: SlideProps): JSX.Element => (
     <div className="accueil-swiper__slide" style={{ '--slide-color': carte.color } as CustomCssProperties }>
         <img src={carte.imageUrl} alt="Description de l'image" className="accueil-swiper__slide-image" />
         <div className="accueil-swiper__slide-overlay">

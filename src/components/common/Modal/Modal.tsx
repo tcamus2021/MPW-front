@@ -25,7 +25,7 @@ const Modal = ({ isOpen, children, triggerClose }: ModalProps): JSX.Element => {
     }, [isOpen, children]);
 
     return (
-        <div className={"modal__overlay" + (isOpen ? ' open' : '')}>
+        <div className={"modal__overlay" + (isOpen ? ' open' : '')} role="dialog">
             <div className="modal__popin" ref={modal}>
                 <div className='modal__close'>
                     <button className='close-btn' onClick={triggerClose} ref={closeButton}>

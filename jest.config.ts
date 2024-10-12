@@ -6,6 +6,7 @@ const config: Config.InitialOptions = {
   testEnvironment: 'jest-environment-jsdom',
   moduleNameMapper: {
     '^@src/(.*)$': '<rootDir>/src/$1',
+    '\\.(css|less|sass|scss)$': 'identity-obj-proxy',
   },
   moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'],
   setupFilesAfterEnv: ['<rootDir>/src/conf/jest.setup.ts'],

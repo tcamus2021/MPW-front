@@ -2,7 +2,12 @@ import { useIntl } from "react-intl";
 import LinkedButton from "../LinkedButton/LinkedButton";
 import './barreRetour.css';
 
-const BarreRetour = () => {
+/**
+ * Affichage de la barre permettant de retourner à l'accueil
+ * 
+ * @return {JSX.Element}
+ */
+const BarreRetour = (): JSX.Element => {
     const intl = useIntl();
     return (
         <div className="back-section">
