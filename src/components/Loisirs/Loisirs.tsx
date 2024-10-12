@@ -1,4 +1,4 @@
-import LosirsData from "@src/types/LoisirsData";
+import LosirsType from "@src/types/LoisirsType";
 import BarreRetour from "../common/BarreRetour/BarreRetour";
 import LoisirsSection from "./LoisirsSection/LoisirsSection";
 import './loisirs.css';
@@ -13,10 +13,10 @@ import { FormattedMessage, useIntl } from "react-intl";
  * @returns {JSX.Element} affichage de la section Loisirs du site
  */
 const Loisirs = (): JSX.Element => {
-    const [selectedLoisirs, setSelectedLoisirs] = useState<LosirsData | null>(null);
+    const [selectedLoisirs, setSelectedLoisirs] = useState<LosirsType | null>(null);
     const intl = useIntl();
 
-    const loisirs: LosirsData[] = [
+    const loisirs: LosirsType[] = [
         { 
             nom: intl.formatMessage({ id: 'activite.bateau.title' }), 
             color: '#D69F81', 

@@ -4,7 +4,7 @@ import { useEffect, useRef } from 'react';
 
 interface ModalProps {
     isOpen: boolean,
-    children: string | JSX.Element,
+    children: JSX.Element | string,
     triggerClose: () => void
 }
 

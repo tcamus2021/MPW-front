@@ -1,0 +1,265 @@
+:root {
+    --color-timeline: #F26666;
+    --color-job-item-right: #F28963;
+    --color-job-item-left: #F2BC79;
+    --color-job-item-button: #F2CDA0;
+}
+
+.travail-page__title {
+    margin-bottom: 5rem;
+}
+
+.travail-page__container {
+    display: flex;
+}
+
+.travail-page__timeline-container {
+    position: relative;
+    width: 100%;
+}
+
+.travail-page__timeline-container:after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 8px;
+    background: var(--color-timeline);
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.travail-page__timeline-container .travail-page__timeline-item {
+    position: relative;
+    background: var(--color-job-item-left);
+    width: calc( 50% - 45px );
+    border-radius: 1rem;
+    display: flex;
+}
+
+.travail-page__timeline-container .travail-page__timeline-item + .travail-page__timeline-item {
+    margin-top: 20px;
+}
+
+.travail-page__timeline-container .travail-page__timeline-item:before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20%;
+    left: calc( 100% + 32px );
+    background: white;
+    width: 15px;
+    height: 15px;
+    border: 6px var(--color-timeline) solid;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.travail-page__timeline-container .travail-page__timeline-item:after {
+    content: "";
+    position: absolute;
+    top: 20%;
+    left: 100%;
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 16px solid var(--color-job-item-left);
+    border-bottom: 20px solid transparent;
+}
+
+.travail-page__timeline-item-entreprise {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: solid 5px var(--color-job-item-right);
+    background-color: white;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
+    width: 20%;
+}
+
+.travail-page__timeline-item-image {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.travail-page__timeline-item-title {
+    font-size: medium;
+}
+
+.travail-page__timeline-item-details {
+    padding: 0.5rem;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+.travail-page__timeline-item-time {
+    position: absolute;
+    top: -30%;
+    left: 0%;
+    display: flex;
+    width: 100%;
+}
+
+.travail-page__timeline-item-details-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-job-item-button);
+    border-radius: 1rem;
+}
+
+.travail-page__timeline-item-details-button-image {
+    width: 2rem;
+}
+
+.travail-page__modal-header {
+    display: flex;
+    width: 100%;
+    background-color: var(--color-job-item-right);
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+}
+
+.travail-page__modal-title {
+    font-size: large;
+}
+
+.travail-page__modal-image {
+    margin-top: 1rem;
+    width: 3rem;
+}
+
+.travail-page__modal-info,
+.travail-page__modal-competences-section,
+.travail-page__modal-description {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+}
+
+.travail-page__modal-info,
+.travail-page__modal-description {
+    width: 100%;
+    flex-direction: column;
+    border-bottom: solid lightgray 2px;
+}
+
+.travail-page__modal-info > * {
+    margin: 0.2rem;
+}
+
+.travail-page__modal-competences-section {
+    flex-direction: column;
+}
+
+.travail-page__modal-competences {
+    display: flex;
+    width: 100%;
+}
+
+.travail-page__modal-competences-tech-skills,
+.travail-page__modal-competences-soft-skills{
+    width: 50%;
+}
+
+.travail-page__modal-competences-tech-skills > ul,
+.travail-page__modal-competences-soft-skills > ul {
+    text-align: start;
+}
+
+.travail-page__modal-description > p,
+.travail-page__modal-description > h3,
+.travail-page__modal-info > p,
+.travail-page__modal-info > h3,
+.travail-page__modal-info > a,
+.travail-page__modal-competences-section > p,
+.travail-page__modal-competences-section > h3 {
+    text-align: start;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+/* Spécifique tablet + mobile */
+@media(max-width: 900px) {
+    .travail-page__timeline-container .travail-page__timeline-item {
+        position: relative;
+        background: var(--color-job-item-left);
+        width: calc( 100% - 45px );
+        border-radius: 1rem;
+        display: flex;
+        margin-bottom: 3rem;
+    }
+
+    .travail-page__timeline-container .travail-page__timeline-item {
+        margin-left: 45px;
+    }
+    
+    .travail-page__timeline-container .travail-page__timeline-item:before {
+        left: auto;
+        top: 20%;
+        right: calc( 100% + 30px );
+    }
+    
+    .travail-page__timeline-container .travail-page__timeline-item:after {
+        left: auto;
+        top: 20%;
+        right: 100%;
+        border-left: none;
+        border-right: 16px solid var(--color-job-item-right);
+    }
+
+    .travail-page__timeline-container:after {
+        left: 0%;
+    }
+
+    .travail-page__modal-competences {
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .travail-page__modal-competences-tech-skills {
+        border-top: solid lightgray 2px;
+    }
+
+    .travail-page__modal-competences-tech-skills,
+    .travail-page__modal-competences-soft-skills{
+        width: 80%;
+    }
+}
+
+/* Spécifique desktop (sans tablette) */
+@media(min-width: 901px) {
+    .travail-page__timeline-container .travail-page__timeline-item:nth-child(even) {
+        margin-left: calc( 50% + 45px );
+    }
+    
+    .travail-page__timeline-container .travail-page__timeline-item:nth-child(even):before {
+        left: auto;
+        top: 20%;
+        right: calc( 100% + 30px );
+    }
+    
+    .travail-page__timeline-container .travail-page__timeline-item:nth-child(even):after {
+        left: auto;
+        top: 20%;
+        right: 100%;
+        border-left: none;
+        border-right: 16px solid var(--color-job-item-right);
+    }
+
+    .travail-page__modal-competences-tech-skills {
+        border-left: solid lightgray 2px;
+    }
+}

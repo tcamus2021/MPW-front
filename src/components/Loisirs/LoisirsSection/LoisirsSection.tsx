@@ -1,8 +1,8 @@
 import CustomCssProperties from "@src/types/CustomCssProperties";
-import LosirsData from "@src/types/LoisirsData";
+import LosirsType from "@src/types/LoisirsType";
 
 interface LoisirsSectionProps {
-    loisir: LosirsData,
+    loisir: LosirsType,
     triggerOpenDetails: () => void
 };
 

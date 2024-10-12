@@ -1,0 +1,82 @@
+[
+    {
+        "entreprise": "Capgemini",
+        "logoEntreprise": "./logo_capgemini.png",
+        "contrat": "parcours.professionnel.common.cdi",
+        "dateDebut": "parcours.professionnel.cap.cdi.date.debut",
+        "poste": "parcours.professionnel.cap.cdi.poste",
+        "competenceTechnique": [
+            "Springboot",
+            "React-JS",
+            "React-TS",
+            "NextJS",
+            "ExpressJS",
+            "Docker",
+            "AWS",
+            "Redis",
+            "Github COPILOT"
+        ],
+        "softSkills": [
+            "parcours.professionnel.cap.cdi.soft.skills.1",
+            "parcours.professionnel.cap.cdi.soft.skills.2",
+            "parcours.professionnel.cap.cdi.soft.skills.3"
+        ],
+        "description": "parcours.professionnel.cap.cdi.description"
+    },
+    {
+        "entreprise": "Capgemini",
+        "logoEntreprise": "./logo_capgemini.png",
+        "contrat": "parcours.professionnel.common.alternance",
+        "dateDebut": "parcours.professionnel.cap.alternance.date.debut",
+        "dateFin": "parcours.professionnel.cap.alternance.date.fin",
+        "poste": "parcours.professionnel.cap.alternance.poste",
+        "lienEtude": "/parcours-scolaire?index=0",
+        "competenceTechnique": [
+            "Springboot",
+            "Spring",
+            "React-JS",
+            "NextJS",
+            "ExpressJS"
+        ],
+        "softSkills": [
+            "parcours.professionnel.cap.alternance.soft.skills.1",
+            "parcours.professionnel.cap.alternance.soft.skills.2",
+            "parcours.professionnel.cap.alternance.soft.skills.3"
+        ],
+        "description": "parcours.professionnel.cap.alternance.description"
+    },
+    {
+        "entreprise": "Capgemini",
+        "logoEntreprise": "./logo_capgemini.png",
+        "contrat": "parcours.professionnel.common.stage",
+        "dateDebut": "parcours.professionnel.cap.stage.date.debut",
+        "dateFin": "parcours.professionnel.cap.stage.date.fin",
+        "poste": "parcours.professionnel.cap.stage.poste",
+        "lienEtude": "/parcours-scolaire?index=1",
+        "competenceTechnique": [
+            "Springboot",
+            "Spring",
+            "React-JS",
+            "NextJS"
+        ],
+        "softSkills": [
+            "parcours.professionnel.cap.stage.soft.skills.1",
+            "parcours.professionnel.cap.stage.soft.skills.2",
+            "parcours.professionnel.cap.stage.soft.skills.3"
+        ],
+        "description": "parcours.professionnel.cap.stage.description"
+    },
+    {
+        "entreprise": "E.Leclerc",
+        "logoEntreprise": "./logo_leclerc.png",
+        "contrat": "parcours.professionnel.common.cdd",
+        "dateDebut": "parcours.professionnel.leclerc.date.debut",
+        "dateFin": "parcours.professionnel.leclerc.date.fin",
+        "poste": "parcours.professionnel.leclerc.poste",
+        "softSkills": [
+            "parcours.professionnel.leclerc.soft.skills.1",
+            "parcours.professionnel.leclerc.soft.skills.2"
+        ],
+        "description": "parcours.professionnel.leclerc.description"
+    }
+]

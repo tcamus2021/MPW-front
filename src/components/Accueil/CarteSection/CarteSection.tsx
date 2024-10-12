@@ -1,9 +1,9 @@
 import LinkedButton from "@src/components/common/LinkedButton/LinkedButton";
-import CarteSectionData from "@src/types/CarteSectionData";
+import CarteSectionType from "@src/types/CarteSectionType";
 import CustomCssProperties from "@src/types/CustomCssProperties";
 
 interface SlideProps {
-    carte: CarteSectionData
+    carte: CarteSectionType
 };
 
 /**

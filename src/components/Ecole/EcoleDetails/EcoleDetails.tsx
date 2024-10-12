@@ -1,11 +1,11 @@
 import CustomCssProperties from "@src/types/CustomCssProperties";
-import EcoleData from "@src/types/EcoleData";
+import EcoleType from "@src/types/EcoleType";
 import { useIntl } from "react-intl";
 
 interface EcoleDetailsProps {
     isOpen: boolean,
     openDetails: () => void,
-    ecole: EcoleData
+    ecole: EcoleType
 }
 
 /**

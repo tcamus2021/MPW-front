@@ -1,7 +1,7 @@
 import { register } from 'swiper/element/bundle';
 import { FormattedMessage, useIntl } from "react-intl";
 import './accueil.css';
-import CarteSectionData from '@src/types/CarteSectionData';
+import CarteSectionType from '@src/types/CarteSectionType';
 import CarteSection from './CarteSection/CarteSection';
 
 register();
@@ -14,7 +14,7 @@ register();
 const Accueil = () => {
     const intl = useIntl();
 
-    const cartes: CarteSectionData[] = [
+    const cartes: CarteSectionType[] = [
         {
             text: intl.formatMessage({ id: 'parcours.scolaire.title' }),
             buttonText: intl.formatMessage({ id: 'accueil.slide.decouvrir' }),

@@ -1,4 +1,4 @@
-export default interface LosirsData {
+export default interface LosirsType {
     nom: string,
     color: string,
     image: string,

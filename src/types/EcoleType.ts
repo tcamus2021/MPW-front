@@ -1,4 +1,4 @@
-export default interface EcoleData {
+export default interface EcoleType {
     level: string,
     color: string,
     logo: string,

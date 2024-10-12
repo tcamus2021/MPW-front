@@ -2,21 +2,17 @@ import { useState } from "react";
 import BarreRetour from "../common/BarreRetour/BarreRetour";
 import EcoleDetails from "./EcoleDetails/EcoleDetails";
 import './ecole.css';
-import EcoleData from "@src/types/EcoleData";
+import EcoleType from "@src/types/EcoleType";
 import { FormattedMessage, useIntl } from "react-intl";
+import { getUrlParams } from "@src/utils/url";
 
 const Ecole = () => {
     const intl = useIntl();
-    const [openedIndex, setOpenedIndex] = useState<number | null>(null);
+    const indexToOpen = getUrlParams('index');
+    const [openedIndex, setOpenedIndex] = useState<number | null>(indexToOpen ? Number.parseInt(indexToOpen) : null);
     const handleOpenedIndexChange = (index: number | null): void => setOpenedIndex(openedIndex === index ? null : index);
 
-    /*
-    "parcours.scolaire.BAC.level": "BAC",
-    "parcours.scolaire.BAC.title": "BAC Sciences et Technologies de l'Industrie et du Développement Durable",
-    "parcours.scolaire.BAC.city": "Lycée Yves Thépot, Quimper",
-    "parcours.scolaire.BAC.description.1": 
-    */
-    const ecoles: EcoleData[] = [
+    const ecoles: EcoleType[] = [
         {
             level: intl.formatMessage({ id: "parcours.scolaire.MS2D.level" }),
             color: "#F26666",
