@@ -9,6 +9,7 @@ import { getDefaultLanguage } from './utils/lang'
 import Ecole from './components/Ecole/Ecole';
 import Travail from './components/Travail/Travail';
 import Loisirs from './components/Loisirs/Loisirs';
+import Contact from './components/Contact/Contact';
 
 // Routes de l'application
 const router = createBrowserRouter([
@@ -24,6 +25,9 @@ const router = createBrowserRouter([
   },{
     path: "/loisirs",
     element: <Loisirs />,
+  },{
+    path: "/contact",
+    element: <Contact />,
   }
 ]);
 

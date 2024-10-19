@@ -5,6 +5,7 @@
     "layout.header.parametres.description": "Ouvrir les paramètres",
     "layout.header.parametres.langues": "Choix de la langue",
     "layout.footer.made.in": "Application web réalisé par Tanguy CAMUS",
+    "layout.footer.code": "Voir le code source de cette application",
 
     "back.button.title": "Retour",
     "back.button.description": "Retourner à l'accueil",
@@ -14,6 +15,7 @@
     "accueil.description.part1": "Premièrement, l'application me sert à apprendre à gérer toutes les couches, de la création à la mise en ligne !",
     "accueil.description.part2": "Ensuite, que ce soit dans le cadre d'un recrutement ou non, on peut se renseigner sur moi d'un point de vue professionnel et retrouver les sources de mon travail.",
     "accueil.slide.decouvrir": "Découvrir",
+    "accueil.contact": "Me contacter",
 
     "parcours.scolaire.title": "Parcours Scolaire",
     "parcours.scolaire.button.description": "Plus de détails",
@@ -97,5 +99,7 @@
     "activite.peche.description.1": "La pêche est une activité qui se lie naturellement à ma passion pour le bateau et qui me ramène à des souvenirs d'enfance. J'ai grandi en pêchant avec mon père ou mon cousin, que ce soit sur la côte ou en mer. Ces moments partagés m'ont appris la patience, l'observation, et surtout l'importance de profiter de l'instant présent. Aujourd'hui, la pêche reste pour moi une manière de me reconnecter à ces souvenirs tout en combinant mon amour pour la mer et la nature.",
     "activite.detente.title": "Détente",
     "activite.detente.description.1": "La détente fait partie intégrante de mon quotidien, et j'aime particulièrement me plonger dans des séries captivantes. Que ce soit Game of Thrones, The Walking Dead, Breaking Bad, Narcos, ou Peaky Blinders, je suis toujours à la recherche de récits immersifs et de personnages complexes qui me tiennent en haleine. Ces séries me permettent de m'évader et de vivre des aventures passionnantes depuis mon canapé.",
-    "activite.detente.description.2": "En parallèle, je suis un amateur de jeux vidéo, en particulier sur console. C'est une manière parfaite pour moi de me détendre après une journée bien remplie."
+    "activite.detente.description.2": "En parallèle, je suis un amateur de jeux vidéo, en particulier sur console. C'est une manière parfaite pour moi de me détendre après une journée bien remplie.",
+
+    "contact.linkedin": "Mon Linkedin"
 }

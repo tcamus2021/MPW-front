@@ -5,6 +5,7 @@
     "layout.header.parametres.description": "Open parameters",
     "layout.header.parametres.langues": "Language Selection",
     "layout.footer.made.in": "Web application made by Tanguy CAMUS",
+    "layout.footer.code": "View the source code of this application",
 
     "back.button.title": "Back",
     "back.button.description": "Back to home",
@@ -14,6 +15,7 @@
     "accueil.description.part1": "First, the application helps me learn how to manage all layers, from creation to deployment!",
     "accueil.description.part2": "Then, whether it's for recruitment or not, you can learn about me from a professional standpoint and find the sources of my work.",
     "accueil.slide.decouvrir": "Discover",
+    "accueil.contact": "Contact Me",
 
     "parcours.scolaire.title": "Educational Background",
     "parcours.scolaire.button.description": "More details",
@@ -97,5 +99,7 @@
     "activite.peche.description.1": "Fishing is an activity that naturally ties into my passion for boating and brings back childhood memories. I grew up fishing with my father or cousin, whether on the coast or at sea. These shared moments taught me patience, observation, and, most importantly, the importance of enjoying the present moment. Today, fishing remains a way for me to reconnect with those memories while combining my love for the sea and nature.",
     "activite.detente.title": "Relaxation",
     "activite.detente.description.1": "Relaxation is an integral part of my daily life, and I particularly enjoy immersing myself in captivating series. Whether it's Game of Thrones, The Walking Dead, Breaking Bad, Narcos, or Peaky Blinders, I am always looking for immersive stories and complex characters that keep me hooked. These series allow me to escape and experience thrilling adventures from my couch.",
-    "activite.detente.description.2": "At the same time, I am a fan of video games, particularly on consoles. It's the perfect way for me to unwind after a busy day."
+    "activite.detente.description.2": "At the same time, I am a fan of video games, particularly on consoles. It's the perfect way for me to unwind after a busy day.",
+
+    "contact.linkedin": "My LinkedIn"
 }

@@ -44,7 +44,7 @@ const Accueil = (): JSX.Element => {
             <p><FormattedMessage id="accueil.description" /></p>
             <p><FormattedMessage id="accueil.description.part1" /></p>
             <p><FormattedMessage id="accueil.description.part2" /></p>
-            <div className='hidden-desktop'>
+            <div className='hidden-desktop main-page__cartes-desktop'>
                 <swiper-container 
                     slides-per-view="1" 
                     navigation="true"
@@ -60,6 +60,14 @@ const Accueil = (): JSX.Element => {
             </div>
             <div className='hidden-mobile main-page__cartes-desktop'>
                 {cartes.map(carte => <CarteSection key={carte.url} carte={carte} /> )}
+            </div>
+            <div className='accueil-page__contact-zone'>
+                <a href="/contact" className='unstyled-link accueil-page__contact-zone-link'>
+                    <button className='btn accueil-page__contact-zone-button'>
+                        <img src="arrow-button.svg" className="arrow-button" aria-hidden="true" />
+                        <FormattedMessage id="accueil.contact" />
+                    </button>
+                </a>
             </div>
         </div>
     );
