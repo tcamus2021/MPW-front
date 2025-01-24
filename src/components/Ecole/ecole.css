@@ -1,89 +1,88 @@
 .ecole-page__list {
-    display: flex;
-    flex-direction: column;
+	display: flex;
+	flex-direction: column;
 }
 
 .ecole-page__selector {
-    background-color: var(--color-previsualisation);
-    border-radius: 1rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
-    width: inherit;
-    margin-top: 1rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    border: none;
-    width: 100%;
+	background-color: var(--color-previsualisation);
+	border-radius: 1rem;
+	padding-right: 1rem;
+	padding-left: 1rem;
+	width: inherit;
+	margin-top: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	cursor: pointer;
+	border: none;
+	width: 100%;
 }
 
-.ecole-page__selector[aria-selected="true"] {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
+.ecole-page__selector[aria-selected='true'] {
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
 }
 
 .ecole-page__previsualisation {
-    display: flex;
-    align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .ecole-page__element-image {
-    width: 3rem;
-    height: 3rem;
-    margin-left: 1rem;
+	width: 3rem;
+	height: 3rem;
+	margin-left: 1rem;
 }
 
 .ecole-page__selector-arrow {
-    transition: transform 0.3s ease;
-    width: 2rem;
-    transform: rotate(90deg);
+	transition: transform 0.3s ease;
+	width: 2rem;
+	transform: rotate(90deg);
 }
 
 .ecole-page__selector-arrow.selected {
-    transition: transform 0.3s ease;
-    transform: rotate(270deg);
+	transition: transform 0.3s ease;
+	transform: rotate(270deg);
 }
 
 .ecole-page__details {
-    background-color: rgb(232, 232, 232);
-    width: inherit;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-bottom: 1rem;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
+	background-color: rgb(232, 232, 232);
+	width: inherit;
+	padding-left: 1rem;
+	padding-right: 1rem;
+	padding-bottom: 1rem;
+	border-bottom-left-radius: 1rem;
+	border-bottom-right-radius: 1rem;
 }
 
 .ecole-page__element-title {
-    margin: 0;
+	margin: 0;
 }
 
 .ecole-page__details-title {
-    display: flex;
-    height: fit-content;
-    align-items: center;
+	display: flex;
+	height: fit-content;
+	align-items: center;
 }
 
 .ecole-page__details-title-localisation,
 .ecole-page__details-title-annee {
-    display: flex;
+	display: flex;
 }
 
 .ecole-page__details-title-image {
-    width: 1.5rem;
-    margin-left: 0.5rem;
+	width: 1.5rem;
+	margin-left: 0.5rem;
 }
 
 /* Spécifique mobile */
-@media(max-width: 767px) {
-    .ecole-page__details-title {
-        align-items: start;
-        flex-direction: column;
-    }
+@media (max-width: 767px) {
+	.ecole-page__details-title {
+		align-items: start;
+		flex-direction: column;
+	}
 
-    .ecole-page__details-title-image {
-        margin-left: 0;
-    }
+	.ecole-page__details-title-image {
+		margin-left: 0;
+	}
 }
-

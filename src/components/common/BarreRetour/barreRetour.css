@@ -1,19 +1,19 @@
 .back-btn .arrow-button {
-    transform: rotate(180deg);
+	transform: rotate(180deg);
 }
 
 .back-btn {
-    width: 5.4rem;
+	width: 5.4rem;
 }
 
 .back-section {
-    background-color: rgb(202, 202, 202);
-    padding: 1rem;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
+	background-color: rgb(202, 202, 202);
+	padding: 1rem;
+	border-radius: 1rem;
+	margin-bottom: 1rem;
 }
 
 .back-section a {
-    display: flex;
-    width: fit-content;
+	display: flex;
+	width: fit-content;
 }

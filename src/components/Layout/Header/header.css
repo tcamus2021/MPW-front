@@ -1,66 +1,66 @@
 /* Style spécifique au header */
 
 /* Spécifique desktop */
-@media(min-width: 768px) {
-    .main-page__header {
-        background-color: white;
-        padding: 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 2rem;
-    }
+@media (min-width: 768px) {
+	.main-page__header {
+		background-color: white;
+		padding: 1rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 2rem;
+	}
 
-    .main-page__logo {
-        width: 4rem;
-    }
+	.main-page__logo {
+		width: 4rem;
+	}
 
-    .main-page-header__parameter {
-        width: 6rem;
-        height: 3rem;
-        background-color: transparent;
-        border: none;
-    }
+	.main-page-header__parameter {
+		width: 6rem;
+		height: 3rem;
+		background-color: transparent;
+		border: none;
+	}
 
-    .parameter__image {
-        width: 2rem;
-        cursor: pointer;
-    }
+	.parameter__image {
+		width: 2rem;
+		cursor: pointer;
+	}
 }
 
-@media(max-width: 767px) {
-    .main-page__logo {
-        width: 3rem;
-        margin-left: 0.5rem
-    }
+@media (max-width: 767px) {
+	.main-page__logo {
+		width: 3rem;
+		margin-left: 0.5rem;
+	}
 
-    .main-page__header {
-        background-color: white;
-        padding-top: 1rem;
-        padding-bottom: 1rem;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 2rem;
+	.main-page__header {
+		background-color: white;
+		padding-top: 1rem;
+		padding-bottom: 1rem;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 2rem;
 
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        z-index: 100; 
-    }
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		z-index: 100;
+	}
 
-    .main-page__title {
-        font-size: small;
-    }
+	.main-page__title {
+		font-size: small;
+	}
 
-    .main-page-header__parameter {
-        background-color: transparent;
-        border: none;
-    }
+	.main-page-header__parameter {
+		background-color: transparent;
+		border: none;
+	}
 
-    .burger-menu__image {
-        height: 2em;
-        transition: transform 0.5s ease;
-    }
+	.burger-menu__image {
+		height: 2em;
+		transition: transform 0.5s ease;
+	}
 }

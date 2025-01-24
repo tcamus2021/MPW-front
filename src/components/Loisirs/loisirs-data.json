@@ -1,47 +1,45 @@
 [
-    { 
-        "nom": "activite.bateau.title", 
-        "color": "#D69F81", 
-        "image": "./bateau.svg",
-        "descriptions": [
-            "activite.bateau.description.1",
-            "activite.bateau.description.2"
-        ]
-    },
-    { 
-        "nom": "activite.developpement.title", 
-        "color": "#F2A35A", 
-        "image": "./code.svg",
-        "descriptions": [
-            "activite.developpement.description.1",
-            "activite.developpement.description.2"
-        ]
-    },
-    { 
-        "nom": "activite.sport.title", 
-        "color": "#F2BF5A", 
-        "image": "./sport.svg",
-        "descriptions": [
-            "activite.sport.description.1",
-            "activite.sport.description.2",
-            "activite.sport.description.3"
-        ]
-    },
-    { 
-        "nom": "activite.peche.title", 
-        "color": "#98C4D9", 
-        "image": "./peche.svg",
-        "descriptions": [
-            "activite.peche.description.1"
-        ]
-    },
-    { 
-        "nom": "activite.detente.title", 
-        "color": "#638CA8", 
-        "image": "./detente.svg",
-        "descriptions": [
-            "activite.detente.description.1",
-            "activite.detente.description.2"
-        ]
-    }
+	{
+		"nom": "activite.bateau.title",
+		"color": "#D69F81",
+		"image": "./bateau.svg",
+		"descriptions": [
+			"activite.bateau.description.1",
+			"activite.bateau.description.2"
+		]
+	},
+	{
+		"nom": "activite.developpement.title",
+		"color": "#F2A35A",
+		"image": "./code.svg",
+		"descriptions": [
+			"activite.developpement.description.1",
+			"activite.developpement.description.2"
+		]
+	},
+	{
+		"nom": "activite.sport.title",
+		"color": "#F2BF5A",
+		"image": "./sport.svg",
+		"descriptions": [
+			"activite.sport.description.1",
+			"activite.sport.description.2",
+			"activite.sport.description.3"
+		]
+	},
+	{
+		"nom": "activite.peche.title",
+		"color": "#98C4D9",
+		"image": "./peche.svg",
+		"descriptions": ["activite.peche.description.1"]
+	},
+	{
+		"nom": "activite.detente.title",
+		"color": "#638CA8",
+		"image": "./detente.svg",
+		"descriptions": [
+			"activite.detente.description.1",
+			"activite.detente.description.2"
+		]
+	}
 ]

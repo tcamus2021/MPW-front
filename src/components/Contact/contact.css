@@ -1,55 +1,55 @@
 .contact-page__fiche-contact-image {
-    width: 4vh;
-    margin-bottom: 1rem;
+	width: 4vh;
+	margin-bottom: 1rem;
 }
 
 .contact-page__fiche-contact__telephone-zone,
 .contact-page__fiche-contact__mail-zone,
 .contact-page__fiche-contact__linkedin-zone {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    justify-content: center;
-    align-items: center;
-    border-radius: 1rem;
-    padding: 1rem;
-    background-color: white;
-    border: solid #F26666 2px;
+	display: flex;
+	flex-direction: column;
+	width: 25%;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1rem;
+	padding: 1rem;
+	background-color: white;
+	border: solid #f26666 2px;
 }
 
 .contact-page__fiche-contact__zones {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-    background-color: #F2CDA0;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    border-radius: 1rem;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	background-color: #f2cda0;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	border-radius: 1rem;
 }
 
 .contact-page__fiche-contact-lien {
-    font-size: small;
+	font-size: small;
 }
 
 /* Spécifique mobile */
-@media(max-width: 767px) {
-    .contact-page__fiche-contact__zones {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+@media (max-width: 767px) {
+	.contact-page__fiche-contact__zones {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 
-    .contact-page__fiche-contact__telephone-zone,
-    .contact-page__fiche-contact__mail-zone,
-    .contact-page__fiche-contact__linkedin-zone {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-        justify-content: center;
-        align-items: center;
-        border-radius: 1rem;
-        padding: 1rem;
-        margin-bottom: 1rem;
-    }
+	.contact-page__fiche-contact__telephone-zone,
+	.contact-page__fiche-contact__mail-zone,
+	.contact-page__fiche-contact__linkedin-zone {
+		display: flex;
+		flex-direction: column;
+		width: 80%;
+		justify-content: center;
+		align-items: center;
+		border-radius: 1rem;
+		padding: 1rem;
+		margin-bottom: 1rem;
+	}
 }
