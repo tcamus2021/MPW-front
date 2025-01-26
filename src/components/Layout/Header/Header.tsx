@@ -1,6 +1,6 @@
 import { useClickOutside } from '@custom-react-hooks/use-click-outside';
 import { useRef, useState } from 'react';
-import { FormattedMessage, useIntl } from 'react-intl';
+import { useIntl } from 'react-intl';
 import MonCompteInfoBulle from '../ParameterDetails/ParameterDetails';
 import './header.css';
 
