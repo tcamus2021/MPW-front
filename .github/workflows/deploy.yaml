@@ -28,7 +28,7 @@ jobs:
 
       # Autorise l'action github
       - name: Add host to known_hosts
-        run: ssh-keyscan -H <YOUR_EC2_PUBLIC_IP> >> ~/.ssh/known_hosts
+        run: ssh-keyscan -H ${{ secrets.APP_EC2_IP }} >> ~/.ssh/known_hosts
 
       # Déployez les fichiers sur l'instance EC2
       - name: Deploy to EC2
