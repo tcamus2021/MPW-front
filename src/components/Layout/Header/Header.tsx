@@ -36,9 +36,7 @@ const Header = ({ locale, setLocale }: HeaderProps): JSX.Element => {
 					aria-hidden="true"
 				/>
 			</a>
-			<h1 className="main-page__title">
-				<FormattedMessage id="layout.header.title" defaultMessage="" />
-			</h1>
+			<h1 className="main-page__title">Tanguy Camus</h1>
 			<div ref={popinButton}>
 				<button
 					id="parameter-desktop"
