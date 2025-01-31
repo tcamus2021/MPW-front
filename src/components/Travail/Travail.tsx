@@ -22,7 +22,10 @@ const Travail = (): JSX.Element => {
 		<div>
 			<BarreRetour />
 			<h2 className="travail-page__title">
-				<FormattedMessage id="parcours.professionnel.title" />
+				<FormattedMessage
+					id="parcours.professionnel.title"
+					defaultMessage=""
+				/>
 			</h2>
 			<div className="travail-page__container">
 				<div className="travail-page__timeline-container">

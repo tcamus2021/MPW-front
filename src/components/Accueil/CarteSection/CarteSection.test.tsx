@@ -22,7 +22,9 @@ describe('CarteSection component', () => {
 
 	it('should render the image with correct src and alt attributes', () => {
 		render(<CarteSection carte={carte} />);
-		const imgElement = screen.getByAltText("Description de l'image");
+		const imgElement = screen.getByRole('img', {
+			hidden: true,
+		});
 		expect(imgElement).toBeInTheDocument();
 		expect(imgElement).toHaveAttribute('src', '/test-image.jpg');
 	});
@@ -42,7 +44,9 @@ describe('CarteSection component', () => {
 
 	it('should apply the correct color as an inline style', () => {
 		render(<CarteSection carte={carte} />);
-		const slideElement = screen.getByRole('img').parentElement;
+		const slideElement = screen.getByRole('img', {
+			hidden: true,
+		}).parentElement;
 		expect(slideElement).toHaveStyle('--slide-color: #ff0000');
 	});
 });

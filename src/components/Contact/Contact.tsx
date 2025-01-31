@@ -17,6 +17,7 @@ const Contact = (): JSX.Element => (
 					<img
 						src="mail-logo.svg"
 						className="contact-page__fiche-contact-image"
+						aria-description="Mail"
 					/>
 					<a
 						href="mailto:tanguycamus.pro@gmail.com"
@@ -29,6 +30,7 @@ const Contact = (): JSX.Element => (
 					<img
 						src="phone-logo.svg"
 						className="contact-page__fiche-contact-image"
+						aria-description="Phone"
 					/>
 					<a
 						href="tel:+33617513524"
@@ -41,6 +43,7 @@ const Contact = (): JSX.Element => (
 					<img
 						src="linkedin-logo.svg"
 						className="contact-page__fiche-contact-image"
+						aria-description="Linkedin"
 					/>
 					<a
 						href="https://www.linkedin.com/in/tanguy-camus-b71915182"

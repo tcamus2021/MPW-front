@@ -1,6 +1,4 @@
 import { FormattedMessage } from 'react-intl';
-import flagFr from 'flag-icon-css/flags/1x1/fr.svg';
-import flagEn from 'flag-icon-css/flags/1x1/gb.svg';
 import './parameterDetails.css';
 
 interface ParameterDetailsProps {
@@ -34,7 +32,11 @@ const ParameterDetails = ({
 				title="Français"
 			>
 				<p>Français</p>
-				<img className="choix__langue-flag" src={flagFr} />
+				<img
+					className="choix__langue-flag"
+					src="fr-icon.svg"
+					aria-hidden="true"
+				/>
 			</button>
 			<button
 				className={
@@ -44,7 +46,11 @@ const ParameterDetails = ({
 				title="English"
 			>
 				<p>English</p>
-				<img className="choix__langue-flag" src={flagEn} />
+				<img
+					className="choix__langue-flag"
+					src="gb-icon.svg"
+					aria-hidden="true"
+				/>
 			</button>
 		</div>
 	</div>

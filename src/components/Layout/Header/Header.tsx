@@ -40,6 +40,7 @@ const Header = ({ locale, setLocale }: HeaderProps): JSX.Element => {
 			<div ref={popinButton}>
 				<button
 					id="parameter-desktop"
+					data-testid="parameter-desktop"
 					className="main-page-header__parameter hidden-mobile"
 					onClick={() => setPopinOpen(!isPopinOpen)}
 					title={intl.formatMessage({
@@ -54,6 +55,7 @@ const Header = ({ locale, setLocale }: HeaderProps): JSX.Element => {
 				</button>
 				<button
 					id="parameter-mobile"
+					data-testid="parameter-mobile"
 					className="main-page-header__parameter btn hidden-desktop"
 					onClick={() => setPopinOpen(!isPopinOpen)}
 					title={intl.formatMessage({

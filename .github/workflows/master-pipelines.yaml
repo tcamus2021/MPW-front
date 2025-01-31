@@ -1,6 +1,5 @@
 name: CI/CD MPW-front
 
-# Uniquement dans le cadre d'un push sur master
 on:
   push:
     branches: 

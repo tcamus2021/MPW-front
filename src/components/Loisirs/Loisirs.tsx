@@ -54,6 +54,7 @@ const Loisirs = (): JSX.Element => {
 								<img
 									className="loisirs-page__modal-image"
 									src={selectedLoisirs.image}
+									aria-hidden="true"
 								/>
 								<h3 className="loisirs-page__modal-title">
 									<FormattedMessage

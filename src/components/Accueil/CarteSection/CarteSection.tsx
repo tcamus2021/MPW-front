@@ -19,8 +19,8 @@ const CarteSection = ({ carte }: SlideProps): JSX.Element => (
 	>
 		<img
 			src={carte.imageUrl}
-			alt="Description de l'image"
 			className="accueil-swiper__slide-image"
+			aria-hidden="true"
 		/>
 		<div className="accueil-swiper__slide-overlay">
 			<h2 className="accueil-swiper__slide-text">{carte.text}</h2>

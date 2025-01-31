@@ -27,38 +27,59 @@ const TravailModal = ({ selectedTravail }: TravailModalProps): JSX.Element => {
 			</div>
 			<div className="travail-page__modal-info">
 				<h3>
-					<FormattedMessage id="parcours.professionnel.modal.information.title" />
+					<FormattedMessage
+						id="parcours.professionnel.modal.information.title"
+						defaultMessage=""
+					/>
 				</h3>
 				<p>{`${intl.formatMessage({ id: 'parcours.professionnel.modal.informations.poste' })} : ${intl.formatMessage({ id: selectedTravail.poste })}`}</p>
 				<p>{`${intl.formatMessage({ id: 'parcours.professionnel.modal.informations.contrat' })} : ${intl.formatMessage({ id: selectedTravail.contrat })}`}</p>
 				{selectedTravail.lienEtude && (
 					<a href={selectedTravail.lienEtude}>
-						<FormattedMessage id="parcours.professionnel.details.etude" />
+						<FormattedMessage
+							id="parcours.professionnel.details.etude"
+							defaultMessage=""
+						/>
 					</a>
 				)}
 				<p>{`${intl.formatMessage({ id: 'parcours.professionnel.modal.informations.duree' })} : ${intl.formatMessage({ id: selectedTravail.dateDebut })} - ${intl.formatMessage({ id: selectedTravail.dateFin || 'parcours.professionnel.modal.informations.duree.actuel' })}`}</p>
 			</div>
 			<div className="travail-page__modal-description">
 				<h3>
-					<FormattedMessage id="parcours.professionnel.modal.description.title" />
+					<FormattedMessage
+						id="parcours.professionnel.modal.description.title"
+						defaultMessage=""
+					/>
 				</h3>
 				<p>
-					<FormattedMessage id={selectedTravail.description} />
+					<FormattedMessage
+						id={selectedTravail.description}
+						defaultMessage=""
+					/>
 				</p>
 			</div>
 			<div className="travail-page__modal-competences-section">
 				<h3>
-					<FormattedMessage id="parcours.professionnel.modal.competences.title" />
+					<FormattedMessage
+						id="parcours.professionnel.modal.competences.title"
+						defaultMessage=""
+					/>
 				</h3>
 				<div className="travail-page__modal-competences">
 					<div className="travail-page__modal-competences-soft-skills">
 						<h4>
-							<FormattedMessage id="parcours.professionnel.modal.competences.generales.title" />
+							<FormattedMessage
+								id="parcours.professionnel.modal.competences.generales.title"
+								defaultMessage=""
+							/>
 						</h4>
 						<ul>
 							{selectedTravail.softSkills.map((skill) => (
 								<li key={skill}>
-									<FormattedMessage id={skill} />
+									<FormattedMessage
+										id={skill}
+										defaultMessage=""
+									/>
 								</li>
 							))}
 						</ul>
@@ -66,7 +87,10 @@ const TravailModal = ({ selectedTravail }: TravailModalProps): JSX.Element => {
 					{selectedTravail.competenceTechnique && (
 						<div className="travail-page__modal-competences-tech-skills">
 							<h4>
-								<FormattedMessage id="parcours.professionnel.modal.competences.tech.title" />
+								<FormattedMessage
+									id="parcours.professionnel.modal.competences.tech.title"
+									defaultMessage=""
+								/>
 							</h4>
 							<ul>
 								{selectedTravail.competenceTechnique.map(

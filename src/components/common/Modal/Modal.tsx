@@ -36,7 +36,11 @@ const Modal = ({ isOpen, children, triggerClose }: ModalProps): JSX.Element => {
 						onClick={triggerClose}
 						ref={closeButton}
 					>
-						<img className="close-btn-image" src="./close.svg" />
+						<img
+							className="close-btn-image"
+							src="./close.svg"
+							aria-hidden="true"
+						/>
 					</button>
 				</div>
 				{children}

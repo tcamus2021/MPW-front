@@ -1,10 +1,11 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import path from 'path';
+import vitePluginSvgr from 'vite-plugin-svgr';
 
 export default defineConfig({
 	base: '/',
-	plugins: [react()],
+	plugins: [react(), vitePluginSvgr()],
 	preview: {
 		port: 3000,
 		strictPort: true,

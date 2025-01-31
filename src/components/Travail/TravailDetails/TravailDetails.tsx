@@ -31,10 +31,10 @@ const TravailDetails = ({
 			</div>
 			<div className="travail-page__timeline-item-details">
 				<h3 className="travail-page__timeline-item-title">
-					<FormattedMessage id={travail.poste} />
+					<FormattedMessage id={travail.poste} defaultMessage="" />
 				</h3>
 				<p>
-					<FormattedMessage id={travail.contrat} />
+					<FormattedMessage id={travail.contrat} defaultMessage="" />
 				</p>
 				<button
 					className="travail-page__timeline-item-details-button btn"
@@ -49,16 +49,22 @@ const TravailDetails = ({
 						aria-hidden="true"
 					/>
 					<p className="travail-page__timeline-item-details-texte">
-						<FormattedMessage id="parcours.professionnel.details.more.information" />
+						<FormattedMessage
+							id="parcours.professionnel.details.more.information"
+							defaultMessage=""
+						/>
 					</p>
 				</button>
 			</div>
 			<div className="travail-page__timeline-item-time">
 				<p>
-					<FormattedMessage id={travail.dateDebut} />
+					<FormattedMessage
+						id={travail.dateDebut}
+						defaultMessage=""
+					/>
 				</p>
 				{travail.dateFin && (
-					<p>{` - ${intl.formatMessage({ id: travail.dateFin })}`}</p>
+					<p>{` - ${intl.formatMessage({ id: travail.dateFin, defaultMessage: '' })}`}</p>
 				)}
 			</div>
 		</div>
