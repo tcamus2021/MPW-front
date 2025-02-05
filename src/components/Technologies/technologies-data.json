@@ -1,0 +1,34 @@
+[
+	{
+		"title": "Frameworks et Librairies",
+		"content": [
+			{
+				"title": "Springboot",
+				"description": "Blablabla",
+				"image": "/sp-logo.webp",
+				"additionnalData": [
+					{
+						"title": "SpringSecurity",
+						"description": "Blablabla",
+						"image": "/sp-logo.png"
+					}
+				]
+			},
+			{
+				"title": "React",
+				"description": "Blablabla",
+				"image": "/react-logo.png"
+			}
+		]
+	},
+	{
+		"title": "Ops",
+		"content": [
+			{
+				"title": "Docker",
+				"description": "Blablabla",
+				"image": "/docker-logo.webp"
+			}
+		]
+	}
+]

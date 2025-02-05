@@ -1,0 +1,33 @@
+.technologies-page_category {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 40px;
+	padding: 1rem;
+}
+
+.technologie-details_container {
+	position: relative;
+	border-radius: 12px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	height: fit-content;
+}
+
+.technologie-details_image {
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	width: 5rem;
+	height: 5rem;
+	object-fit: contain;
+	border-radius: 1rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	background-color: white;
+}
+
+.technologie-details_content--title-section {
+	padding-left: 4rem;
+}
+
+.technologie-details_content--description-section {
+	padding: 1rem;
+}
