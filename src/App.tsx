@@ -10,6 +10,7 @@ import Ecole from './components/Ecole/Ecole';
 import Travail from './components/Travail/Travail';
 import Loisirs from './components/Loisirs/Loisirs';
 import Contact from './components/Contact/Contact';
+import Technologies from './components/Technologies/Technologies';
 
 // Routes de l'application
 const router = createBrowserRouter([
@@ -32,6 +33,10 @@ const router = createBrowserRouter([
 	{
 		path: '/contact',
 		element: <Contact />,
+	},
+	{
+		path: '/technologies',
+		element: <Technologies />,
 	},
 ]);
 

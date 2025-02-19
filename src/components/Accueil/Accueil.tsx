@@ -39,6 +39,13 @@ const Accueil = (): JSX.Element => {
 			imageUrl: '/phare.svg',
 			color: '#F2A35A',
 		},
+		{
+			text: intl.formatMessage({ id: 'tech.title' }),
+			buttonText: intl.formatMessage({ id: 'accueil.slide.decouvrir' }),
+			url: '/technologies',
+			imageUrl: './technologies.svg',
+			color: '#63D26B',
+		},
 	];
 
 	return (

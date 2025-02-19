@@ -1,0 +1,89 @@
+.technologies-page_category {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	gap: 40px;
+	padding: 1rem;
+}
+
+.technologie-details_container {
+	position: relative;
+	border-radius: 12px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+	height: fit-content;
+}
+
+.technologie-details_image {
+	position: absolute;
+	top: -20px;
+	left: -20px;
+	width: 5rem;
+	height: 5rem;
+	object-fit: contain;
+	border-radius: 1rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	background-color: white;
+}
+
+.technologie-details_content--title-section {
+	padding-left: 4rem;
+}
+
+.technologie-details_content--description-section,
+.technologie-details_content--more-section {
+	padding: 1rem;
+}
+
+.technologie-details_content--more-section-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: none;
+	background-color: white;
+	border-top: solid 1px black;
+	cursor: pointer;
+	gap: 0.3rem;
+	width: 100%;
+}
+
+.technologie-details_content--more-section-image {
+	width: 1.2rem;
+	transform: rotate(270deg);
+}
+
+.button-active {
+	border-bottom: solid 1px black;
+}
+
+.button-inactive {
+	.technologie-details_content--more-section-image {
+		transform: rotate(90deg);
+	}
+}
+
+.technologie-details_content--subdetails {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.technologie-details_content--subdetail {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	width: 7rem;
+	margin-top: 1rem;
+	padding: 0.5rem;
+	border-radius: 1rem;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.technologie-details_content--subdetail-image {
+	width: 4rem;
+	height: 4rem;
+	background-color: white;
+}
+
+.technologie-details_content--subdetail-title {
+	margin: 0;
+	margin-top: 0.3rem;
+}
