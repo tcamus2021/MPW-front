@@ -4,20 +4,49 @@
 		"content": [
 			{
 				"title": "Springboot",
-				"description": "Blablabla",
+				"description": "Spring Boot est un framework Java basé sur Spring qui simplifie le développement d’applications web et microservices. Il offre une configuration automatique, un serveur intégré et une gestion simplifiée des dépendances, facilitant la création de services RESTful et d’architectures microservices.",
 				"image": "/sp-logo.webp",
 				"additionnalData": [
 					{
 						"title": "SpringSecurity",
-						"description": "Blablabla",
-						"image": "/sp-logo.png"
+						"image": "/sp-logo.webp"
+					},
+					{
+						"title": "Maven",
+						"image": "/mvn-logo.png"
+					},
+					{
+						"title": "Datadog",
+						"image": "/datadog-logo.svg"
+					},
+					{
+						"title": "Redis",
+						"image": "/redis-logo.svg"
 					}
 				]
 			},
 			{
 				"title": "React",
-				"description": "Blablabla",
-				"image": "/react-logo.png"
+				"description": "React est une bibliothèque JavaScript open-source développée par Meta, permettant de créer des interfaces utilisateur interactives et réactives en utilisant un modèle basé sur des composants et un Virtual DOM pour optimiser les mises à jour.",
+				"image": "/react-logo.png",
+				"additionnalData": [
+					{
+						"title": "Redux",
+						"image": "/redux-logo.svg"
+					},
+					{
+						"title": "Vite",
+						"image": "/vite-logo.png"
+					},
+					{
+						"title": "ESLint",
+						"image": "/eslint-logo.webp"
+					},
+					{
+						"title": "npm",
+						"image": "/npm-logo.png"
+					}
+				]
 			}
 		]
 	},
@@ -26,8 +55,13 @@
 		"content": [
 			{
 				"title": "Docker",
-				"description": "Blablabla",
+				"description": "Docker est une plateforme open-source qui permet de créer, déployer et exécuter des applications dans des conteneurs légers et portables, garantissant la cohérence entre les environnements de développement, de test et de production.",
 				"image": "/docker-logo.webp"
+			},
+			{
+				"title": "AWS",
+				"description": "AWS (Amazon Web Services) est une plateforme de services cloud proposée par Amazon, offrant une large gamme de solutions comme le stockage, le calcul et les bases de données, permettant aux entreprises de déployer des applications évolutives et sécurisées.",
+				"image": "aws-logo.png"
 			}
 		]
 	}

@@ -48,6 +48,10 @@ body {
 	height: 1rem;
 }
 
+.hidden {
+	display: none;
+}
+
 /* Spécifique desktop */
 @media (min-width: 768px) {
 	.main-page {
