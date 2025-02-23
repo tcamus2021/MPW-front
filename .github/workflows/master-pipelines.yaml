@@ -55,15 +55,12 @@ jobs:
     name: Deploy to S3
     needs: [build, lint, test]
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'  # S'exécute uniquement sur la branche master
+    if: github.ref == 'refs/heads/master'
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
 
-      - name: Install AWS CLI
-        run: sudo apt-get install awscli -y
-
-      - name: Configure AWS Credentials
+      - name: Configure AWS CLI
         uses: aws-actions/configure-aws-credentials@v4
         with:
           aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
