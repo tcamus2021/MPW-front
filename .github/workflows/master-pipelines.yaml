@@ -52,29 +52,28 @@ jobs:
         run: npm run test
 
   deploy:
-    name: Deploy on EC2
+    name: Deploy to S3
     needs: [build, lint, test]
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'  # S'exécute uniquement sur la branche master
     steps:
-      # Clonez le dépôt
       - name: Checkout code
         uses: actions/checkout@v3
-      # Configurez l'accès SSH à l'EC2
-      - name: Set up SSH
-        uses: webfactory/ssh-agent@v0.9.0
+
+      - name: Install AWS CLI
+        run: sudo apt-get install awscli -y
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4
         with:
-          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
-      # Construisez votre application
-      - name: Build application
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: ${{ secrets.AWS_REGION }}
+
+      - name: Upload to S3
         run: |
-          npm install
-          npm run build
-      # Autorise l'action github
-      - name: Add host to known_hosts
-        run: ssh-keyscan -H ${{ secrets.APP_EC2_IP }} >> ~/.ssh/known_hosts
-      # Déployez les fichiers sur l'instance EC2
-      - name: Deploy to EC2
+          aws s3 sync ./dist s3://${{ secrets.AWS_S3_BUCKET_NAME }} --delete
+
+      - name: Invalidate CloudFront Cache
         run: |
-          scp -r ./dist/* ubuntu@${{ secrets.APP_EC2_IP }}:${{ secrets.APP_EC2_PATH }}
-          ssh ubuntu@${{ secrets.APP_EC2_IP }} 'sudo systemctl restart nginx'
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }} --paths '/*'
